@@ -36,5 +36,5 @@ jobs:
         context: .
         push : true
         tags: |
-          ghcr.io/${{ GITHUB_ENV }}/esraagaber/getting-started:latest
-          ghcr.io/${{ GITHUB_ENV }}/esraagaber/getting-started:${{ github.sha }}
+          ghcr.io/${{ env.owner }}/esraagaber/getting-started:latest
+          ghcr.io/${{ env.owner }}/esraagaber/getting-started:${{ github.sha }}
